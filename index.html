@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan Motors</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .nav-link{
+            text-align: center;
+            color: #fff;
+        }
+        .container h2{
+            padding-top: 70px;
+        }
+        #loja img{
+            height: 500px;
+        }
+        header{
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: #5E1224;
+            color: #fff;
+            z-index: 1000;
+        }
+        body{
+            background-color: rgba(224, 12, 19, 0.05);
+        }
+        form {
+            max-width: 300px;
+        }
+        form button{
+            margin: 8px 0;
+        }
+        .col img{
+            height: 320px;
+            width: 390px;
+        }
+        .container img{
+            height: 320px;
+        }
+        #car{
+            margin-bottom: 16px;
+        }
+        #carousel-page img{
+            height: 450px;
+        }
+        footer{
+            background-color: #5E1224;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Dan Motors</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav  nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#promocoes">Promoções</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+        <div id="carousel-page" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div data-bs-spy="scroll" data-bs-target="#cabecalho" class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="images/image1.jpg" alt="Ferrari Frente">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="images/image2.jpg" alt="Ferrari interior">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="images/image3.jpg" alt="Ferrari Verso">
+                </div>
+            </div>
+            <button  data-bs-target="#carousel-page" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button  data-bs-target="#carousel-page" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-page" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-page" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-page" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    <section>
+        <div class="container">
+            <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+                <h2 id="produtos">Produtos</h2>
+                <div class="row">
+                    <div class="col">
+                        <img src="images/p1.jpg" alt="Ford GT">
+                        <h4 class="card-title">Ford GT</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat voluptas obcaecati.</p>
+                                    <a href="#" id="car" class="btn btn-primary">Tenho Interesse</a>
+                    </div>
+                    <div class="col">
+                        <img src="images/p2.jpg" alt="morris minor">
+                        <h4 class="card-title">Morris Minor</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat voluptas obcaecati.</p>
+                                    <a href="#" id="car" class="btn btn-primary">Tenho Interesse</a>
+                    </div>
+                    <div class="col">
+                        <img src="images/p3.jpg" alt="Mercedes">
+                        <h4 class="card-title">Mercedes AMG GT</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat voluptas obcaecati.</p>
+                                    <a href="#" id="car" class="btn btn-primary">Tenho Interesse</a>
+                    </div>
+                    <div class="col">
+                        <img src="images/p4.jpg" alt="lamborghini gallardo">
+                        <h4 class="card-title">Lamborghini Gallardo</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat voluptas obcaecati.</p>
+                                    <a href="#" class="btn btn-primary">Tenho Interesse</a>
+                    </div>
+                    <div class="col">
+                        <img src="images/p5.jpg" alt="rolls royce">
+                        <h4 class="card-title">Rolls Royce</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat voluptas obcaecati.</p>
+                                    <a href="#" class="btn btn-primary">Tenho Interesse</a>
+                    </div>
+                    <div class="col">
+                        <img src="images/p6.jpg" alt="Mercedes">
+                        <h4 class="card-title">Mercedes-Benz E-Class Coupe</h4>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat voluptas obcaecati.</p>
+                                    <a href="#" class="btn btn-primary">Tenho Interesse</a>
+                    </div>
+                </div>
+                <div class="container">
+                    <h2 id="promocoes">Promoções</h2>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    Car Lamborghini Red
+                                </div>
+                                <img src="images/pro1.jpg" alt="lamborghini gallardo" class="img-fluid">
+                                <div class="card-body">
+                                    <h4 class="card-title">Lamborghini Gallardo</h4>
+                                    <h5 class="card-subtitle">500 cavalos de potência</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                    <a href="#" class="btn btn-primary">Tenho Interesse</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <div class="card-header card text-bg-primary">
+                                    Car GT3 Grey
+                                </div>
+                                <img src="images/pro2.jpg" alt="Porche" class="img-fluid">
+                                <div class="card-body">
+                                    <h4 class="card-title">Porche GT3</h4>
+                                    <h5 class="card-subtitle">502 cavalos de potênciae o </h5>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat voluptas obcaecati.</p>
+                                    <a href="#" class="btn btn-primary">Tenho Interesse</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <div class="card-header">
+                                    Car GTX Grey
+                                </div>
+                                <img src="images/pro3.jpg" alt="Ford GT" class="img-fluid">
+                                <div class="card-body">
+                                    <h4 class="card-title">Ford GTX</h4>
+                                    <h5 class="card-subtitle">650 cavalos de potência</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat voluptas obcaecati.</p>
+                                    <a href="#" class="btn btn-primary">Tenho Interesse</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 id="contato">Contato</h2>
+                <form>
+                    <label class="form-label" for="nome">Seu nome:</label>
+                    <input class="form-control form-control-sm" type="text" id="nome" required>
+                    <label class="form-label" for="email">Seu E-mail:</label>
+                    <input class="form-control form-control-sm" type="email" id="email" required>
+                    <label class="form-label" for="tel">Seu Telefone:</label>
+                    <input class="form-control form-control-sm" type="tel" id="tel" required>
+                    <button class="btn btn-success">Enviar</button>
+                </form>  
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                Todos os direitos reservados.
+            </div>
+        </footer>
+    </section>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
